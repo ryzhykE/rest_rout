@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /~user12/rest/server/api/cars/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php
+DirectoryIndex index.php
